@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Net Ninja</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <style>
+      section {
+        padding: 60px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
+      <div class="container-xxl">
+        <!-- navbar brand / title -->
+        <a class="navbar-brand" href="#intro">
+          <span class="text-secondary fw-bold">
+            <i class="bi bi-book-half"></i>
+            Net Ninja Pro - the Book
+          </span>
+        </a>
+        <!-- toggle button for mobile nav -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#topics">About The Book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Get in Touch</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item ms-2 d-none d-md-inline">
+              <a class="btn btn-warning" href="#pricing">Buy Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main image & intro text -->
+    <section id="intro">
+      <div class="container-lg">
+        <div class="row g-4 justify-content-center align-items-center">
+          <div class="col-md-5 text-center text-md-start">
+            <h1>
+              <div class="display-2">Black-Belt</div>
+              <div class="display-5 text-muted">Your Coding Skills</div>
+            </h1>
+            <p class="lead my-4 text-muted">
+              A complete and comprehensive guide for an aspiring developer.
+            </p>
+            <a href="#pricing" class="btn btn-warning btn-lg">Buy Now</a>
+            <!-- open sidebar / offcanvas -->
+            <a
+              href="#sidebar"
+              class="d-block mt-3"
+              data-bs-toggle="offcanvas"
+              role="button"
+              aria-controls="sidebar"
+            >
+              Explore my other books
+            </a>
+          </div>
+          <div class="col-md-5 text-center d-none d-md-block">
+            <!-- tooltip -->
+            <span
+              class="tt"
+              data-bs-placement="bottom"
+              title="Net Ninja Pro book cover"
+            >
+              <img src="ebook-cover.png" class="img-fluid" alt="ebook" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- pricing plans -->
+    <section id="pricing" class="bg-light mt-5">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Pricing Plans</h2>
+          <p class="lead text-muted">Choose a pricing plan to suit you.</p>
+        </div>
+
+        <div class="row my-5 g-0 align-items-center justify-content-center">
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Starter Edition</h4>
+                <p class="lead card-subtitle">eBook download only</p>
+                <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  This is the basic version of the course. You will get 300
+                  pages of sample codes and suggestions along with guidlines to
+                  keep good coding practices.
+                </p>
+                <a href="#" class="btn btn-outline-warning btn-lg mt-3">
+                  Buy Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-9 col-lg-4">
+            <div class="card border-primary border-2">
+              <div class="card-header text-center text-primary">
+                Most Popular
+              </div>
+              <div class="card-body text-center py-5">
+                <h4 class="card-title">Premium Edition</h4>
+                <p class="lead card-subtitle">eBook download & all updates</p>
+                <p class="display-4 my-4 text-primary fw-bold">$18.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  This is the ultimate version of the course. You will get all
+                  the benefits of the other courses along with exclusive access
+                  to private discord community and a massive bonus project.
+                </p>
+                <a href="#" class="btn btn-outline-warning btn-lg mt-3">
+                  Buy Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Complete Edition</h4>
+                <p class="lead card-subtitle">download, updates & extras</p>
+                <p class="display-5 my-4 text-primary fw-bold">$24.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  This is the advanced version of the course. You will get all
+                  the content in the basic version and interviews with other
+                  developers to help you land a job.
+                </p>
+                <a href="#" class="btn btn-outline-warning btn-lg mt-3">
+                  Buy Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end container -->
+    </section>
+
+    <!-- topics at a glance -->
+    <section id="topics">
+      <div class="container-md">
+        <div class="text-center">
+          <h2>Inside the Book...</h2>
+          <p class="lead text-muted">
+            A quick glance at the topics you'll learn
+          </p>
+        </div>
+        <div class="row my-5 g-5 justify-content-around align-items-center">
+          <div class="col-6 col-lg-4">
+            <img src="kindle.png" class="img-fluid" alt="ebook" />
+          </div>
+          <div class="col-lg-6">
+            <!-- accordion -->
+            <div class="accordion" id="chapters">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-1">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-1"
+                    aria-expanded="true"
+                    aria-controls="chapter-1"
+                  >
+                    Chapter 1 - Your First Web Page
+                  </button>
+                </h2>
+                <div
+                  id="chapter-1"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="heading-1"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      In this section you will learn the bascis of HTML and CSS.
+                      We will take you through the different aspects of layout
+                      desining. We will build a basic web site in a way that you
+                      will grasp the basic concepts on an applicable level.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-2">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-2"
+                    aria-expanded="false"
+                    aria-controls="chapter-2"
+                  >
+                    Chapter 2 - Mastering CSS
+                  </button>
+                </h2>
+                <div
+                  id="chapter-2"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-2"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      This is a masterfuly curated section about the various
+                      concepts, rules and techniques in CSS.
+                    </p>
+                    <p>
+                      You will be guided through a myrid of explanations and
+                      examples.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-3">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-3"
+                    aria-expanded="false"
+                    aria-controls="chapter-1"
+                  >
+                    Chapter 3 - The Power of JavaScript
+                  </button>
+                </h2>
+                <div
+                  id="chapter-3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-3"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>This sections is about JavaScript.</p>
+                    <p>
+                      You will be getting brilliantly articulated lectures about
+                      JavaScript. This is a beginner to advanced level course.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-4">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-4"
+                    aria-expanded="false"
+                    aria-controls="chapter-4"
+                  >
+                    Chapter 4 - Storing Data (Firebase Databases)
+                  </button>
+                </h2>
+                <div
+                  id="chapter-4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-4"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>This course is about the Database Managents Systems.</p>
+                    <p>
+                      You will be guided through various concepts and ideas of
+                      data sstoring and database management by our finest
+                      tutuors.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-5">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-5"
+                    aria-expanded="false"
+                    aria-controls="chapter-5"
+                  >
+                    Chapter 5 - User Authentication
+                  </button>
+                </h2>
+                <div
+                  id="chapter-5"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-5"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      This section talks about the different methods and systems
+                      for user authentication using fire base
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- reviews list -->
+    <section id="reviews" class="bg-light">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2><i class="bi bi-stars"></i>Book Reviews</h2>
+          <p class="lead">What my students have said about the book...</p>
+        </div>
+
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-8">
+            <div class="list-group">
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">As a sysadmin, I can recommend this book!</h5>
+                <p class="mb-1">
+                  This book's author(s) definitely know their stuff. I'm a
+                  former data center system administrator - also called a
+                  sysadmin - and finally, here's a computer book that I can
+                  recommend to my computer illiterate friends and relatives when
+                  it comes to getting started in learning to code or to use
+                  slightly more advanced computing technologies than the average
+                  Joe user.
+                </p>
+                <small>Review by Altaïr Ibn-LaʼAhad</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">Must Have For Beginner Coders</h5>
+                <p class="mb-1">
+                  I am just starting out learning the concepts of coding,
+                  because I would like to start making my own video games as a
+                  hobby. I have purchased other "how-to" guides for beginners,
+                  which ended up being very confusing and required a more
+                  intermediate level of knowledge with coding. I am very happy
+                  with this book, as it provides straightforward and easy to
+                  understand lessons in four different coding languages, along
+                  with access to a free-to-use coding program so you can
+                  practice each lesson step-by-step in real time.
+                </p>
+                <small>Review by Desmond Miles</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <h5 class="mb-1">Better than I expected</h5>
+                <p class="mb-1">
+                  I’m 40 and decided to learn some programming language as my
+                  only exposure was HTML back in high school. I was also going
+                  to involve my son who is 14 and is very interested in
+                  programming games. This book was a pleasant surprise. It’s
+                  definitely written with my son in mind, but it was not hard to
+                  follow once you understood the pattern it takes.
+                </p>
+                <small>Review by Giovanni Auditore</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">Impressive.</h5>
+                <p class="mb-1">
+                  This book is a comprehensive guide that covers all the
+                  essential concepts of computer science and coding in a clear
+                  and concise manner. The book is organized into seven chapters,
+                  each covering a different topic, from programming languages to
+                  algorithms and data structures.
+                </p>
+                <small>Review by Caterina Sforza</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <h5 class="mb-1">Super cool resource for all ages!</h5>
+                <p class="mb-1">
+                  This is a great resource, it approaches Computer Science from
+                  a modern view. These kids are techies right away, so this book
+                  just guides them along through more complicated topics with
+                  the end goal of writing some basic code! It might say "for
+                  middle schoolers" but this book is really a resource for
+                  anyone who wants a good Computer Sci. beginner work book!
+                </p>
+                <small>Review by Cristina Vespucci</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact form -->
+    <!-- form-control, form-label, form-select, input-group, input-group-text -->
+    <section id="contact">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Get in Touch</h2>
+          <p class="lead">
+            Questions to ask? Fill out the form to contact me directly...
+          </p>
+        </div>
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <form>
+              <label for="email" class="form-label">Email address:</label>
+              <div class="input-group mb-4">
+                <span class="input-group-text">
+                  <i class="bi bi-envelope-fill text-secondary"></i>
+                </span>
+                <input type="email" id="email" class="form-control"
+                placeholder="e.g. ezio@example.com" / required>
+                <!-- tooltip -->
+                <span class="input-group-text">
+                  <span
+                    class="tt"
+                    data-bs-placement="bottom"
+                    title="Enter an email address we can reply to."
+                  >
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
+              </div>
+              <label for="name" class="form-label">Name:</label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-person-fill text-secondary"></i>
+                </span>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="e.g. Mario"
+                  required
+                />
+                <!-- tooltip -->
+                <span class="input-group-text">
+                  <span
+                    class="tt"
+                    data-bs-placement="bottom"
+                    title="Pretty self explanatory really..."
+                  >
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
+              </div>
+              <label for="subject" class="form-label"
+                >What is your question about?</label
+              >
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-right-dots-fill text-secondary"></i>
+                </span>
+                <select class="form-select" id="subject">
+                  <option value="pricing" selected>Pricing query</option>
+                  <option value="content">Content query</option>
+                  <option value="other">Other query</option>
+                </select>
+              </div>
+              <div class="mb-4 mt-5 form-floating">
+                <textarea
+                  class="form-control"
+                  id="query"
+                  style="height: 140px"
+                  placeholder="query"
+                ></textarea>
+                <label for="query">Your query...</label>
+              </div>
+              <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-warning">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- get updates / modal trigger -->
+    <section class="bg-light">
+      <div class="container">
+        <div class="text-center">
+          <h2>Stay in the Loop</h2>
+          <p class="lead">Get the latest updates as they happen...</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p class="text-muted my-4">
+              We are a group of passionate developers. We are trying to
+              introduce the intricate world of programming to more people in a
+              comprehensive way and we would love to have you on the journey
+              with us.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <!-- side panel / offcanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="sidebar"
+      aria-labelledby="sidebar-label"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>These some of my others works which you may find helpful.</p>
+        <!-- dropdown -->
+        <div class="dropdown mt-3">
+          <button
+            class="btn btn-warning dropdown-toggle"
+            type="button"
+            id="book-dropdown"
+            data-bs-toggle="dropdown"
+          >
+            Choose a book title
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://www.linkedin.com/pulse/become-react-superhero-vol-1-manny-henri"
+                >Become a React Superhero</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://www.vuemastery.com/conferences/vueconf-us-2023/conquering-forms-in-vue/"
+                >Conquering Vue.js</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://nextjs.org/learn/seo/improve"
+                >Levelling up Your Next.js</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="bg-light">
+      <div class="container text-center">
+        <a href="https://instagram.com/netninjashaun?igshid=MzRlODBiNWFlZA==">
+          <i
+            class="bi bi-instagram text-dark me-2"
+            style="font-size: 1.5rem"
+          ></i>
+        </a>
+        <a href="https://github.com/iamshaunjp"
+          ><i class="bi bi-github text-dark" style="font-size: 1.5rem"></i
+        ></a>
+        <a href="https://www.linkedin.com/company/net-ninja-uk/"
+          ><i
+            class="bi bi-linkedin text-dark ms-2"
+            style="font-size: 1.5rem"
+          ></i
+        ></a>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltips = document.querySelectorAll(".tt");
+      tooltips.forEach((t) => {
+        new bootstrap.Tooltip(t);
+      });
+    </script>
+  </body>
+</html>
